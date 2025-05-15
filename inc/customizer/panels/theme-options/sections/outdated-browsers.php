@@ -27,7 +27,7 @@ Kirki::add_field(
 			'element' => 'input',
 			'type'    => 'button',
 			'class'   => 'button button-secondary',
-			'onclick' => 'javascript:wp.customize.previewer.preview.iframe[0].contentWindow.document.dispatchEvent(new CustomEvent("arts/outdatedbrowser/test"));',
+			'onclick' => 'javascript:wp.customize.previewer.preview.iframe[0].contentWindow.document.dispatchEvent(new CustomEvent("xpoint/outdatedbrowser/test"));',
 		),
 		'active_callback' => array(
 			array(
