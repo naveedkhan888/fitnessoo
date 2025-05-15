@@ -14,8 +14,8 @@ Kirki::add_field(
 	array(
 		'type'            => 'image',
 		'settings'        => 'custom_logo_retina_url',
-		'label'           => esc_html__( 'Retina Logo', 'rubenz' ),
-		'description'     => esc_html__( 'Upload site logo in @2x resolution for smooth display on high-dpi screens.', 'rubenz' ),
+		'label'           => esc_html__( 'Retina Logo', 'themename' ),
+		'description'     => esc_html__( 'Upload site logo in @2x resolution for smooth display on high-dpi screens.', 'themename' ),
 		'section'         => 'title_tagline',
 		'default'         => '',
 		'priority'        => $priority,
@@ -37,8 +37,8 @@ Kirki::add_field(
 	array(
 		'type'            => 'slider',
 		'settings'        => 'custom_logo_max_height',
-		'label'           => esc_html__( 'Logo Max Height', 'rubenz' ),
-		'description'     => esc_html__( 'Desktop screens', 'rubenz' ),
+		'label'           => esc_html__( 'Logo Max Height', 'themename' ),
+		'description'     => esc_html__( 'Desktop screens', 'themename' ),
 		'section'         => 'title_tagline',
 		'default'         => 80,
 		'choices'         => array(
@@ -74,13 +74,13 @@ Kirki::add_field(
 	array(
 		'type'            => 'slider',
 		'settings'        => 'custom_logo_max_height_tablet',
-		'label'           => esc_html__( 'Logo Max Height', 'rubenz' ),
+		'label'           => esc_html__( 'Logo Max Height', 'themename' ),
 		'description'     => sprintf(
 			'%1s %2s%3s %4s',
-			esc_html__( 'Tablet screens', 'rubenz' ),
+			esc_html__( 'Tablet screens', 'themename' ),
 			esc_attr( $md ),
-			esc_html__( 'px', 'rubenz' ),
-			esc_html__( 'and lower', 'rubenz' )
+			esc_html__( 'px', 'themename' ),
+			esc_html__( 'and lower', 'themename' )
 		),
 		'section'         => 'title_tagline',
 		'default'         => 80,
@@ -117,13 +117,13 @@ Kirki::add_field(
 	array(
 		'type'            => 'slider',
 		'settings'        => 'custom_logo_max_height_mobile',
-		'label'           => esc_html__( 'Logo Max Height', 'rubenz' ),
+		'label'           => esc_html__( 'Logo Max Height', 'themename' ),
 		'description'     => sprintf(
 			'%1s %2s%3s %4s',
-			esc_html__( 'Mobile screens', 'rubenz' ),
+			esc_html__( 'Mobile screens', 'themename' ),
 			esc_attr( $sm ),
-			esc_html__( 'px', 'rubenz' ),
-			esc_html__( 'and lower', 'rubenz' )
+			esc_html__( 'px', 'themename' ),
+			esc_html__( 'and lower', 'themename' )
 		),
 		'section'         => 'title_tagline',
 		'default'         => 80,

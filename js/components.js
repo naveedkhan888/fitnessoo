@@ -6,7 +6,7 @@
  * ==========================================================================
  * ==========================================================================
  *
- * Rubenz – Creative Portfolio AJAX Template
+ * Themename – Creative Portfolio AJAX Template
  *
  * [Table of Contents]
  *
@@ -2648,14 +2648,14 @@ function fixMobileBarHeight() {
 
 		vh = document.documentElement.clientHeight * 0.01;
 
-		$('#rubenz-fix-bar').html(':root { --fix-bar-vh: ' + vh + 'px; }\n');
+		$('#themename-fix-bar').html(':root { --fix-bar-vh: ' + vh + 'px; }\n');
 
 	}
 
 	function createStyleElement() {
 
-		if (!$('#rubenz-fix-bar').length) {
-			$('head').append('<style id=\"rubenz-fix-bar\"></style>');
+		if (!$('#themename-fix-bar').length) {
+			$('head').append('<style id=\"themename-fix-bar\"></style>');
 		}
 
 	}

@@ -30,7 +30,7 @@ Kirki::add_field(
 	array(
 		'type'     => 'typography',
 		'settings' => 'font_primary',
-		'label'    => esc_html__( 'Primary Font', 'rubenz' ),
+		'label'    => esc_html__( 'Primary Font', 'themename' ),
 		'section'  => 'typography',
 		'default'  => array(
 			'font-family' => 'Poppins',
@@ -48,7 +48,7 @@ Kirki::add_field(
 	array(
 		'type'     => 'typography',
 		'settings' => 'font_secondary',
-		'label'    => esc_html__( 'Secondary Font', 'rubenz' ),
+		'label'    => esc_html__( 'Secondary Font', 'themename' ),
 		'section'  => 'typography',
 		'default'  => array(
 			'font-family' => 'Oswald',
@@ -66,8 +66,8 @@ Kirki::add_field(
 	array(
 		'type'        => 'switch',
 		'settings'    => 'force_load_all_fonts_variations',
-		'label'       => esc_html__( 'Force Load All Selected Fonts Variations', 'rubenz' ),
-		'description' => esc_html__( 'Please also note that this may significantly decrease site loading speed if your font contains a lot of weights & styles. Use with caution.', 'rubenz' ),
+		'label'       => esc_html__( 'Force Load All Selected Fonts Variations', 'themename' ),
+		'description' => esc_html__( 'Please also note that this may significantly decrease site loading speed if your font contains a lot of weights & styles. Use with caution.', 'themename' ),
 		'section'     => 'typography',
 		'default'     => false,
 		'priority'    => $priority++,

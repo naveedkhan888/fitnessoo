@@ -1,6 +1,6 @@
-=== Rubenz ===
+=== Themename ===
 
-Contributors: Artem Semkin
+Contributors: XpertPoin8
 Requires at least: 6.4
 Tested up to: 6
 Requires PHP: 7.4
@@ -11,7 +11,7 @@ Crafted with love for creative folks to impress the visitors with stunning portf
 
 == Description ==
 
-Rubenz would be a great choice to launch a portfolio website for graphic & motion designers, interior designers, photographers and creative agencies.
+Themename would be a great choice to launch a portfolio website for graphic & motion designers, interior designers, photographers and creative agencies.
 
 == Copyright ==
 
