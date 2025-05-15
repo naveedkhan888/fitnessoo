@@ -478,11 +478,11 @@ msgid "Hi. Welcome back"
 msgstr ""
 
 #. Author URI of the theme
-msgid "https://artemsemkin.com"
+msgid "https://xpertpoin8.com"
 msgstr ""
 
 #. URI of the theme
-msgid "https://artemsemkin.com/themename/wp/"
+msgid "https://xpertpoin8.com/themename/wp/"
 msgstr ""
 
 #: inc/customizer/panels/blog/sections/masthead.php:49

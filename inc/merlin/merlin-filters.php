@@ -8,10 +8,10 @@ function xpoint_merlin_import_files() {
 	return array(
 		array(
 			'import_file_name'           => esc_html__( 'Themename Demo Data', 'themename' ),
-			'import_file_url'            => esc_url( 'https://artemsemkin.com/wp-json/edd/v1/file/' . XPOINT_THEME_SLUG . '/demo-data' ),
-			'import_widget_file_url'     => esc_url( 'https://artemsemkin.com/wp-json/edd/v1/file/' . XPOINT_THEME_SLUG . '/demo-widgets' ),
-			'import_customizer_file_url' => esc_url( 'https://artemsemkin.com/wp-json/edd/v1/file/' . XPOINT_THEME_SLUG . '/demo-customizer' ),
-			'preview_url'                => esc_url( 'https://artemsemkin.com/' . XPOINT_THEME_SLUG . '/wp/' ),
+			'import_file_url'            => esc_url( 'https://xpertpoin8.com/wp-json/edd/v1/file/' . XPOINT_THEME_SLUG . '/demo-data' ),
+			'import_widget_file_url'     => esc_url( 'https://xpertpoin8.com/wp-json/edd/v1/file/' . XPOINT_THEME_SLUG . '/demo-widgets' ),
+			'import_customizer_file_url' => esc_url( 'https://xpertpoin8.com/wp-json/edd/v1/file/' . XPOINT_THEME_SLUG . '/demo-customizer' ),
+			'preview_url'                => esc_url( 'https://xpertpoin8.com/' . XPOINT_THEME_SLUG . '/wp/' ),
 		),
 	);
 }
@@ -69,7 +69,7 @@ function xpoint_merlin_setup_elementor() {
 
 	// Update URLs from demo data with the ones pointing to current website
 	if ( class_exists( '\Elementor\Utils' ) ) {
-		$from = 'https://artemsemkin.com/' . XPOINT_THEME_SLUG . '/wp/';
+		$from = 'https://xpertpoin8.com/' . XPOINT_THEME_SLUG . '/wp/';
 		$to   = trailingslashit( get_site_url() );
 
 		try {

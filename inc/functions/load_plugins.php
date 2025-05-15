@@ -32,7 +32,7 @@ function xpoint_register_required_plugins() {
 		array(
 			'name'     => esc_html__( 'Advanced Custom Fields PRO', 'themename' ),
 			'slug'     => 'advanced-custom-fields-pro',
-			'source'   => esc_url( 'https://artemsemkin.com/wp-json/edd/v1/file/acf-pro/plugin' ),
+			'source'   => esc_url( 'https://xpertpoin8.com/wp-json/edd/v1/file/acf-pro/plugin' ),
 			'required' => true,
 		),
 		array(
@@ -59,7 +59,7 @@ function xpoint_register_required_plugins() {
 		array(
 			'name'     => esc_html__( 'Themename Core', 'themename' ),
 			'slug'     => 'themename-core',
-			'source'   => esc_url( 'https://artemsemkin.com/wp-json/edd/v1/file/' . XPOINT_THEME_SLUG . '/core-plugin' ),
+			'source'   => esc_url( 'https://xpertpoin8.com/wp-json/edd/v1/file/' . XPOINT_THEME_SLUG . '/core-plugin' ),
 			'required' => true,
 			'version'  => '1.0',
 		),

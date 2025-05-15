@@ -1626,10 +1626,10 @@ class Merlin {
 	public function generate_child_style_css( $slug, $parent, $author, $version ) {
 		$output = "/**
   Theme Name: {$parent} Child
-  Theme URI: https://artemsemkin.com/{$slug}/wp/
+  Theme URI: https://xpertpoin8.com/{$slug}/wp/
   Description: This is a child theme of {$parent}, used for codebase customizations.
   Author: {$author}
-  Author URI: https://artemsemkin.com
+  Author URI: https://xpertpoin8.com
   Template: {$slug}
   Version: {$version}
 */

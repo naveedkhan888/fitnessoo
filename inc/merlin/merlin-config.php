@@ -15,7 +15,7 @@ $wizard      = new Merlin(
 		'license_step'         => true, // EDD license activation step.
 		'license_required'     => false, // Require the license activation step.
 		'license_help_url'     => 'https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code', // URL for the 'license-tooltip'.
-		'edd_remote_api_url'   => 'https://artemsemkin.com/wp-json/edd/v1/activate/' . XPOINT_THEME_SLUG . '/theme', // EDD_Theme_Updater_Admin remote_api_url.
+		'edd_remote_api_url'   => 'https://xpertpoin8.com/wp-json/edd/v1/activate/' . XPOINT_THEME_SLUG . '/theme', // EDD_Theme_Updater_Admin remote_api_url.
 		'edd_item_name'        => '', // EDD_Theme_Updater_Admin item_name.
 		'edd_theme_slug'       => XPOINT_THEME_SLUG, // EDD_Theme_Updater_Admin item_slug.
 		'ready_big_button_url' => '', // Link for the big button on the ready step.
@@ -72,7 +72,7 @@ $wizard      = new Merlin(
 		'ready-action-link'        => esc_html__( 'Extras', 'themename' ),
 		'ready-big-button'         => esc_html__( 'View your website', 'themename' ),
 		'ready-link-1'             => sprintf( '<a href="%1$s" target="_blank">%2$s</a>', 'https://wordpress.org/support/', esc_html__( 'Explore WordPress', 'themename' ) ),
-		'ready-link-2'             => sprintf( '<a href="%1$s" target="_blank">%2$s</a>', 'https://themeforest.net/user/artemsemkin', esc_html__( 'Get Theme Support', 'themename' ) ),
+		'ready-link-2'             => sprintf( '<a href="%1$s" target="_blank">%2$s</a>', 'https://themeforest.net/user/xpertpoin8', esc_html__( 'Get Theme Support', 'themename' ) ),
 		'ready-link-3'             => sprintf( '<a href="%1$s">%2$s</a>', admin_url( 'customize.php' ), esc_html__( 'Start Customizing', 'themename' ) ),
 	)
 );

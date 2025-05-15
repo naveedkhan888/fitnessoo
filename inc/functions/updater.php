@@ -9,7 +9,7 @@ if ( ! class_exists( 'Xpoint_Theme_Updater' ) ) {
 new Xpoint_Theme_Updater(
 	// Config settings
 	array(
-		'remote_api_url' => 'https://artemsemkin.com/wp-json/',
+		'remote_api_url' => 'https://xpertpoin8.com/wp-json/',
 		'theme_slug'     => XPOINT_THEME_SLUG, // Theme slug
 		'version'        => XPOINT_THEME_VERSION, // The current version of this theme
 	),
@@ -69,12 +69,12 @@ new Xpoint_Theme_Updater(
 		'license-help-no-purchase-code-benefit-4'       => esc_html__( 'Lifetime automatic theme updates', 'themename' ),
 		'license-help-no-purchase-code-benefit-5'       => esc_html__( 'Lifetime automatic core plugin updates', 'themename' ),
 		'license-local-info'                            => esc_html__( 'Local or staging installations don\'t count towards the license activation limit.', 'themename' ),
-		'support-forum-url'                             => esc_url( 'https://artemsemkin.ticksy.com/' ),
+		'support-forum-url'                             => esc_url( 'https://xpertpoin8.ticksy.com/' ),
 		'support-forum-link'                            => esc_html__( 'View Support Forum', 'themename' ),
 		'support-supported-until'                       => esc_html__( 'Supported until', 'themename' ),
 		'support-expired'                               => esc_html__( 'Expired on', 'themename' ),
-		'item-page-url'                                 => esc_url( 'https://themeforest.net/item/themename-ajax-creative-portfolio-wordpress-theme/23887784?aid=artemsemkin&aso=buyer_admin_panel&aca=theme_license_page' ),
-		'item-checkout-url'                             => esc_url( 'https://themeforest.net/checkout/from_item/23887784?license=regular&support=bundle_6month&aid=artemsemkin&aso=buyer_admin_panel&aca=theme_license_page' ),
+		'item-page-url'                                 => esc_url( 'https://themeforest.net/item/themename-ajax-creative-portfolio-wordpress-theme/23887784?aid=xpertpoin8&aso=buyer_admin_panel&aca=theme_license_page' ),
+		'item-checkout-url'                             => esc_url( 'https://themeforest.net/checkout/from_item/23887784?license=regular&support=bundle_6month&aid=xpertpoin8&aso=buyer_admin_panel&aca=theme_license_page' ),
 		'item-checkout-link'                            => esc_html__( 'Buy Now', 'themename' ),
 		'item-page-link'                                => esc_html__( 'View Pricing & Details', 'themename' ),
 		'date-unknown'                                  => esc_html__( 'Unknown', 'themename' ),
