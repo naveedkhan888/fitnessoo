@@ -87,7 +87,7 @@ $loop_has_thumbnails = new WP_Query(
 	array(
 		'post_type'      => array(
 			'page',
-			'arts_portfolio_item',
+			'xpoint_portfolio_item',
 		),
 		'posts_per_page' => -1,
 		'meta_key'       => '_thumbnail_id',
