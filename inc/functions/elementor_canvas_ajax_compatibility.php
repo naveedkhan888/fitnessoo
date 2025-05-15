@@ -92,7 +92,7 @@ add_action(
 			array(
 				'post_type'      => array(
 					'page',
-					'xpoint_portfolio_item_item',
+					'xpoint_portfolio_item',
 				),
 				'posts_per_page' => -1,
 				'meta_key'       => '_thumbnail_id',
