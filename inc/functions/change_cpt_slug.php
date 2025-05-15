@@ -7,7 +7,7 @@ function arts_change_cpt_slug( $args, $post_type ) {
 	$enable_custom_portfolio_slug = get_theme_mod( 'enable_custom_portfolio_slug', false );
 	$portfolio_slug               = get_theme_mod( 'portfolio_slug' );
 
-	if ( $enable_custom_portfolio_slug && ! empty( $portfolio_slug ) && $post_type == 'xpoint_portfolio_item' ) {
+	if ( $enable_custom_portfolio_slug && ! empty( $portfolio_slug ) && $post_type == 'arts_portfolio_item' ) {
 		$args['rewrite']['slug'] = $portfolio_slug;
 	}
 

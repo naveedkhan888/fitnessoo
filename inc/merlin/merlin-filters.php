@@ -34,10 +34,10 @@ function arts_merlin_setup_elementor() {
 
 	// Update CPT Support
 	if ( ! $cpt_support ) {
-		$cpt_support = array( 'page', 'post', 'xpoint_portfolio_item' );
+		$cpt_support = array( 'page', 'post', 'arts_portfolio_item' );
 		update_option( 'elementor_cpt_support', $cpt_support );
-	} elseif ( ! in_array( 'xpoint_portfolio_item', $cpt_support ) ) {
-		$cpt_support[] = 'xpoint_portfolio_item';
+	} elseif ( ! in_array( 'arts_portfolio_item', $cpt_support ) ) {
+		$cpt_support[] = 'arts_portfolio_item';
 		update_option( 'elementor_cpt_support', $cpt_support );
 	}
 
@@ -144,22 +144,22 @@ function arts_merlin_setup_hicpo() {
 
 	// Sortable custom post types
 	if ( ! $hicpo_objects ) {
-		$hicpo_objects            = array( 'xpoint_portfolio_item' );
+		$hicpo_objects            = array( 'arts_portfolio_item' );
 		$hicpo_options['objects'] = $hicpo_objects;
 		update_option( 'hicpo_options', $hicpo_options );
-	} elseif ( ! in_array( 'xpoint_portfolio_item', $hicpo_objects ) ) {
-		$hicpo_objects[]          = 'xpoint_portfolio_item';
+	} elseif ( ! in_array( 'arts_portfolio_item', $hicpo_objects ) ) {
+		$hicpo_objects[]          = 'arts_portfolio_item';
 		$hicpo_options['objects'] = $hicpo_objects;
 		update_option( 'hicpo_options', $hicpo_options );
 	}
 
 	// Sortable taxonomies
 	if ( ! $hicpo_tags ) {
-		$hicpo_tags            = array( 'xpoint_portfolio_category' );
+		$hicpo_tags            = array( 'arts_portfolio_category' );
 		$hicpo_options['tags'] = $hicpo_tags;
 		update_option( 'hicpo_options', $hicpo_options );
-	} elseif ( ! in_array( 'xpoint_portfolio_category', $hicpo_tags ) ) {
-		$hicpo_tags[]          = 'xpoint_portfolio_category';
+	} elseif ( ! in_array( 'arts_portfolio_category', $hicpo_tags ) ) {
+		$hicpo_tags[]          = 'arts_portfolio_category';
 		$hicpo_options['tags'] = $hicpo_tags;
 		update_option( 'hicpo_options', $hicpo_options );
 	}

@@ -29,7 +29,7 @@ the_post();
 
 <?php
 
-if ( $post_type == 'xpoint_portfolio_item' && $is_elementor_page && $enable_portfolio_nav ) {
+if ( $post_type == 'arts_portfolio_item' && $is_elementor_page && $enable_portfolio_nav ) {
 	get_template_part( 'template-parts/nav/nav', 'portfolio' );
 }
 

@@ -18,7 +18,7 @@ $enable_portfolio_loop              = get_theme_mod( 'enable_portfolio_loop', tr
 $enable_portfolio_next_first_mobile = get_theme_mod( 'enable_portfolio_next_first_mobile', false );
 
 $args  = array(
-	'post_type'      => 'xpoint_portfolio_item',
+	'post_type'      => 'arts_portfolio_item',
 	'posts_per_page' => -1,
 );
 $posts = get_posts( $args );
