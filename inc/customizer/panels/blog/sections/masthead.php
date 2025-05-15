@@ -6,17 +6,17 @@ $priority = 1;
  * Masthead Layout
  */
 Kirki::add_field(
-	'xpoint',
+	'arts',
 	array(
 		'type'     => 'select',
 		'settings' => 'masthead_style',
-		'label'    => esc_html__( 'Style', 'themename' ),
+		'label'    => esc_html__( 'Style', 'rubenz' ),
 		'section'  => 'blog_masthead',
 		'default'  => '',
 		'priority' => $priority++,
 		'choices'  => array(
-			'solid_color'      => esc_html__( 'Solid Color', 'themename' ),
-			'background_image' => esc_html__( 'Post Featured Image as Background', 'themename' ),
+			'solid_color'      => esc_html__( 'Solid Color', 'rubenz' ),
+			'background_image' => esc_html__( 'Post Featured Image as Background', 'rubenz' ),
 		),
 	)
 );
@@ -25,28 +25,28 @@ Kirki::add_field(
  * Content Alignment
  */
 Kirki::add_field(
-	'xpoint',
+	'arts',
 	array(
 		'type'     => 'radio-buttonset',
 		'settings' => 'masthead_alignment',
-		'label'    => esc_html__( 'Content Alignment', 'themename' ),
+		'label'    => esc_html__( 'Content Alignment', 'rubenz' ),
 		'section'  => 'blog_masthead',
 		'default'  => 'text-left',
 		'priority' => $priority++,
 		'choices'  => array(
-			'text-left'   => esc_html__( 'Left', 'themename' ),
-			'text-center' => esc_html__( 'Center', 'themename' ),
-			'text-right'  => esc_html__( 'Right', 'themename' ),
+			'text-left'   => esc_html__( 'Left', 'rubenz' ),
+			'text-center' => esc_html__( 'Center', 'rubenz' ),
+			'text-right'  => esc_html__( 'Right', 'rubenz' ),
 		),
 	)
 );
 
 Kirki::add_field(
-	'xpoint',
+	'arts',
 	array(
 		'type'            => 'slider',
 		'settings'        => 'masthead_overlay_opacity',
-		'label'           => esc_html__( 'Image Overlay Opacity', 'themename' ),
+		'label'           => esc_html__( 'Image Overlay Opacity', 'rubenz' ),
 		'section'         => 'blog_masthead',
 		'default'         => 0.60,
 		'priority'        => $priority++,
@@ -73,11 +73,11 @@ Kirki::add_field(
 );
 
 Kirki::add_field(
-	'xpoint',
+	'arts',
 	array(
 		'type'            => 'switch',
 		'settings'        => 'masthead_image_parallax',
-		'label'           => esc_html__( 'Enable Parallax', 'themename' ),
+		'label'           => esc_html__( 'Enable Parallax', 'rubenz' ),
 		'section'         => 'blog_masthead',
 		'default'         => true,
 		'priority'        => $priority++,
@@ -92,11 +92,11 @@ Kirki::add_field(
 );
 
 Kirki::add_field(
-	'xpoint',
+	'arts',
 	array(
 		'type'            => 'slider',
 		'settings'        => 'masthead_image_parallax_speed',
-		'label'           => esc_html__( 'Parallax Speed', 'themename' ),
+		'label'           => esc_html__( 'Parallax Speed', 'rubenz' ),
 		'section'         => 'blog_masthead',
 		'default'         => 0.1,
 		'priority'        => $priority++,

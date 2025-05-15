@@ -10,12 +10,12 @@ $sm = intval( get_option( 'elementor_viewport_sm', 480 ) );
  * Retina Logo
  */
 Kirki::add_field(
-	'xpoint',
+	'arts',
 	array(
 		'type'            => 'image',
 		'settings'        => 'custom_logo_retina_url',
-		'label'           => esc_html__( 'Retina Logo', 'themename' ),
-		'description'     => esc_html__( 'Upload site logo in @2x resolution for smooth display on high-dpi screens.', 'themename' ),
+		'label'           => esc_html__( 'Retina Logo', 'rubenz' ),
+		'description'     => esc_html__( 'Upload site logo in @2x resolution for smooth display on high-dpi screens.', 'rubenz' ),
 		'section'         => 'title_tagline',
 		'default'         => '',
 		'priority'        => $priority,
@@ -33,12 +33,12 @@ Kirki::add_field(
  * Logo Max Height Desktop
  */
 Kirki::add_field(
-	'xpoint',
+	'arts',
 	array(
 		'type'            => 'slider',
 		'settings'        => 'custom_logo_max_height',
-		'label'           => esc_html__( 'Logo Max Height', 'themename' ),
-		'description'     => esc_html__( 'Desktop screens', 'themename' ),
+		'label'           => esc_html__( 'Logo Max Height', 'rubenz' ),
+		'description'     => esc_html__( 'Desktop screens', 'rubenz' ),
 		'section'         => 'title_tagline',
 		'default'         => 80,
 		'choices'         => array(
@@ -70,17 +70,17 @@ Kirki::add_field(
  * Logo Max Height Tablet
  */
 Kirki::add_field(
-	'xpoint',
+	'arts',
 	array(
 		'type'            => 'slider',
 		'settings'        => 'custom_logo_max_height_tablet',
-		'label'           => esc_html__( 'Logo Max Height', 'themename' ),
+		'label'           => esc_html__( 'Logo Max Height', 'rubenz' ),
 		'description'     => sprintf(
 			'%1s %2s%3s %4s',
-			esc_html__( 'Tablet screens', 'themename' ),
+			esc_html__( 'Tablet screens', 'rubenz' ),
 			esc_attr( $md ),
-			esc_html__( 'px', 'themename' ),
-			esc_html__( 'and lower', 'themename' )
+			esc_html__( 'px', 'rubenz' ),
+			esc_html__( 'and lower', 'rubenz' )
 		),
 		'section'         => 'title_tagline',
 		'default'         => 80,
@@ -113,17 +113,17 @@ Kirki::add_field(
  * Logo Max Height Mobile
  */
 Kirki::add_field(
-	'xpoint',
+	'arts',
 	array(
 		'type'            => 'slider',
 		'settings'        => 'custom_logo_max_height_mobile',
-		'label'           => esc_html__( 'Logo Max Height', 'themename' ),
+		'label'           => esc_html__( 'Logo Max Height', 'rubenz' ),
 		'description'     => sprintf(
 			'%1s %2s%3s %4s',
-			esc_html__( 'Mobile screens', 'themename' ),
+			esc_html__( 'Mobile screens', 'rubenz' ),
 			esc_attr( $sm ),
-			esc_html__( 'px', 'themename' ),
-			esc_html__( 'and lower', 'themename' )
+			esc_html__( 'px', 'rubenz' ),
+			esc_html__( 'and lower', 'rubenz' )
 		),
 		'section'         => 'title_tagline',
 		'default'         => 80,

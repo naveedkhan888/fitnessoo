@@ -5,8 +5,8 @@
  *
  * @return void
  */
-add_filter( 'previous_posts_link_attributes', 'xpoint_filter_previous_posts_link_attributes', 10, 2 );
-function xpoint_filter_previous_posts_link_attributes() {
+add_filter( 'previous_posts_link_attributes', 'arts_filter_previous_posts_link_attributes', 10, 2 );
+function arts_filter_previous_posts_link_attributes() {
 	$attributes = 'class="page-numbers prev elegant-icons arrow_left"';
 	return $attributes;
 }
@@ -16,8 +16,8 @@ function xpoint_filter_previous_posts_link_attributes() {
  *
  * @return void
  */
-add_filter( 'next_posts_link_attributes', 'xpoint_filter_next_posts_link_attributes', 10, 2 );
-function xpoint_filter_next_posts_link_attributes() {
+add_filter( 'next_posts_link_attributes', 'arts_filter_next_posts_link_attributes', 10, 2 );
+function arts_filter_next_posts_link_attributes() {
 	$attributes = 'class="page-numbers next elegant-icons arrow_right"';
 	return $attributes;
 }
@@ -29,7 +29,7 @@ function xpoint_filter_next_posts_link_attributes() {
  *
  * @return void
  */
-function xpoint_posts_pagination( $args = array(), $class = 'pagination' ) {
+function arts_posts_pagination( $args = array(), $class = 'pagination' ) {
 	if ( $GLOBALS['wp_query']->max_num_pages <= 1 ) {
 		return;
 	}
@@ -40,7 +40,7 @@ function xpoint_posts_pagination( $args = array(), $class = 'pagination' ) {
 			'prev_next'          => false, // hide default prev/next
 			'prev_text'          => '',
 			'next_text'          => '',
-			'screen_reader_text' => esc_html__( 'Posts navigation', 'themename' ),
+			'screen_reader_text' => esc_html__( 'Posts navigation', 'rubenz' ),
 		)
 	);
 
@@ -48,7 +48,7 @@ function xpoint_posts_pagination( $args = array(), $class = 'pagination' ) {
 	$prev_link = get_previous_posts_link( $args['prev_text'] );
 	$next_link = get_next_posts_link( $args['next_text'] );
 	$template  = apply_filters(
-		'xpoint_navigation_markup_template',
+		'arts_navigation_markup_template',
 		'
 		<nav class="navigation %1$s" role="navigation">
 			<div class="screen-reader-text d-none">%2$s</div>

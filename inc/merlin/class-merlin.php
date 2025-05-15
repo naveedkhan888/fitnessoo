@@ -1578,7 +1578,7 @@ class Merlin {
 			<?php
 				/**
 				 * Theme functions and definitions.
-				 * This is a child theme of Themename.
+				 * This is a child theme of Rubenz.
 				 *
 				 * @link https://developer.wordpress.org/themes/basics/theme-functions/
 				 */
@@ -1626,10 +1626,10 @@ class Merlin {
 	public function generate_child_style_css( $slug, $parent, $author, $version ) {
 		$output = "/**
   Theme Name: {$parent} Child
-  Theme URI: https://xpertpoin8.com/{$slug}/wp/
+  Theme URI: https://artemsemkin.com/{$slug}/wp/
   Description: This is a child theme of {$parent}, used for codebase customizations.
   Author: {$author}
-  Author URI: https://xpertpoin8.com
+  Author URI: https://artemsemkin.com
   Template: {$slug}
   Version: {$version}
 */
@@ -2093,7 +2093,7 @@ class Merlin {
 	 */
 	public function after_content_import_setup() {
 		// Set static homepage.
-		$homepage = xpoint_get_page_by_title( apply_filters( 'merlin_content_home_page_title', 'Home' ) );
+		$homepage = arts_get_page_by_title( apply_filters( 'merlin_content_home_page_title', 'Home' ) );
 
 		if ( $homepage ) {
 			update_option( 'page_on_front', $homepage->ID );
@@ -2103,7 +2103,7 @@ class Merlin {
 		}
 
 		// Set static blog page.
-		$blogpage = xpoint_get_page_by_title( apply_filters( 'merlin_content_blog_page_title', 'Blog' ) );
+		$blogpage = arts_get_page_by_title( apply_filters( 'merlin_content_blog_page_title', 'Blog' ) );
 
 		if ( $blogpage ) {
 			update_option( 'page_for_posts', $blogpage->ID );
@@ -2118,7 +2118,7 @@ class Merlin {
 	 */
 	public function before_content_import_setup() {
 		// Update the Hello World! post by making it a draft.
-		$hello_world = xpoint_get_page_by_title( 'Hello World!', OBJECT, 'post' );
+		$hello_world = arts_get_page_by_title( 'Hello World!', OBJECT, 'post' );
 
 		if ( ! empty( $hello_world ) ) {
 			$hello_world->post_status = 'draft';

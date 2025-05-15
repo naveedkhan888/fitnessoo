@@ -1,6 +1,6 @@
 <?php
 
-$is_elementor_page = xpoint_is_built_with_elementor();
+$is_elementor_page = arts_is_built_with_elementor();
 
 get_header();
 get_template_part( 'template-parts/masthead/masthead' );
@@ -19,7 +19,7 @@ the_post();
 						<?php
 							wp_link_pages(
 								array(
-									'before'      => '<div class="page-links">' . esc_html__( 'Pages:', 'themename' ),
+									'before'      => '<div class="page-links">' . esc_html__( 'Pages:', 'rubenz' ),
 									'after'       => '</div>',
 									'link_before' => '<span class="page-number">',
 									'link_after'  => '</span>',

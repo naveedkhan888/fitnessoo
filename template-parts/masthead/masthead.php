@@ -17,20 +17,20 @@ $masthead_subheading           = '';
 $class_alignment               = '';
 $class_properties              = '';
 $class_meta                    = '';
-$is_elementor_page             = xpoint_is_built_with_elementor();
+$is_elementor_page             = arts_is_built_with_elementor();
 $blog_page_id                  = get_option( 'page_for_posts' );
 
 if ( $is_elementor_page ) {
 
 	$class_overlay                 = 'd-none';
 	$thumbnail                     = get_post_thumbnail_id();
-	$video_bg                      = xpoint_get_field( 'video', get_the_ID() );
-	$masthead_layout               = xpoint_get_document_option( 'page_masthead_layout' );
-	$masthead_color                = xpoint_get_document_option( 'page_masthead_color_theme' );
-	$masthead_image_parallax       = xpoint_get_document_option( 'page_masthead_image_parallax' );
-	$masthead_image_parallax_speed = xpoint_get_document_option( 'page_masthead_image_parallax_speed' )['size'];
-	$masthead_subheading           = xpoint_get_field( 'subheading' );
-	$class_alignment               = xpoint_get_document_option( 'page_masthead_alignment' );
+	$video_bg                      = arts_get_field( 'video', get_the_ID() );
+	$masthead_layout               = arts_get_document_option( 'page_masthead_layout' );
+	$masthead_color                = arts_get_document_option( 'page_masthead_color_theme' );
+	$masthead_image_parallax       = arts_get_document_option( 'page_masthead_image_parallax' );
+	$masthead_image_parallax_speed = arts_get_document_option( 'page_masthead_image_parallax_speed' )['size'];
+	$masthead_subheading           = arts_get_field( 'subheading' );
+	$class_alignment               = arts_get_document_option( 'page_masthead_alignment' );
 	$class_properties              = $class_alignment;
 	$attrs_section                 = 'data-os-animation=true';
 
@@ -64,32 +64,32 @@ if ( $is_elementor_page ) {
 if ( is_category() ) {
 
 	$page_title    = get_category( get_query_var( 'cat' ) )->name;
-	$page_subtitle = esc_html__( 'Posts in category', 'themename' );
+	$page_subtitle = esc_html__( 'Posts in category', 'rubenz' );
 
 } elseif ( is_author() ) {
 
 	$page_title    = get_userdata( get_query_var( 'author' ) )->display_name;
-	$page_subtitle = esc_html__( 'Posts by author', 'themename' );
+	$page_subtitle = esc_html__( 'Posts by author', 'rubenz' );
 
 } elseif ( is_tag() ) {
 
 	$page_title    = single_tag_title( '', false );
-	$page_subtitle = esc_html__( 'Posts with tag', 'themename' );
+	$page_subtitle = esc_html__( 'Posts with tag', 'rubenz' );
 
 } elseif ( is_day() ) {
 
 	$page_title    = get_the_date();
-	$page_subtitle = esc_html__( 'Day archive', 'themename' );
+	$page_subtitle = esc_html__( 'Day archive', 'rubenz' );
 
 } elseif ( is_month() ) {
 
 	$page_title    = get_the_date( 'F Y' );
-	$page_subtitle = esc_html__( 'Month archive', 'themename' );
+	$page_subtitle = esc_html__( 'Month archive', 'rubenz' );
 
 } elseif ( is_year() ) {
 
 	$page_title    = get_the_date( 'Y' );
-	$page_subtitle = esc_html__( 'Year archive', 'themename' );
+	$page_subtitle = esc_html__( 'Year archive', 'rubenz' );
 
 } elseif ( is_home() ) {
 
@@ -97,7 +97,7 @@ if ( is_category() ) {
 
 } elseif ( is_search() ) {
 
-	$default_title = esc_html__( 'Search', 'themename' );
+	$default_title = esc_html__( 'Search', 'rubenz' );
 	$page_title    = get_theme_mod( 'search_title', $default_title );
 
 } else {
@@ -108,7 +108,7 @@ if ( is_category() ) {
 }
 
 if ( ! $page_title ) {
-	$page_title = esc_html__( 'Blog', 'themename' );
+	$page_title = esc_html__( 'Blog', 'rubenz' );
 }
 
 if ( $masthead_image_parallax ) {
@@ -120,7 +120,7 @@ if ( $masthead_image_parallax ) {
 
 switch ( $masthead_layout ) {
 	case 'content_top':
-		$class_layout      = xpoint_get_document_option( 'page_masthead_image_layout' );
+		$class_layout      = arts_get_document_option( 'page_masthead_image_layout' );
 		$class_section    .= ' section_pt';
 		$class_background .= ' section-masthead__background_bottom ' . $class_layout;
 		break;
@@ -179,7 +179,7 @@ switch ( $class_alignment ) {
 					<?php endif; ?>
 				</div>
 			</header>
-			<?php if ( xpoint_have_rows( 'properties' ) ) : ?>
+			<?php if ( arts_have_rows( 'properties' ) ) : ?>
 				<div class="row section-masthead__properties <?php echo esc_attr( $class_properties ); ?>">
 					<?php while ( have_rows( 'properties' ) ) : ?>
 						<?php the_row(); ?>
@@ -194,7 +194,7 @@ switch ( $class_alignment ) {
 	<?php if ( ! empty( $thumbnail ) ) : ?>
 		<div class="section section-masthead__background <?php echo esc_attr( $class_background ); ?>" <?php echo esc_attr( $attrs_backgorund ); ?>>
 			<?php
-				xpoint_the_lazy_image(
+				arts_the_lazy_image(
 					array(
 						'id'    => $thumbnail,
 						'class' => array(

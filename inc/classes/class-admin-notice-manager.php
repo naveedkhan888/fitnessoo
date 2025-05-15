@@ -4,10 +4,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-class Xpoint_Admin_Notice_Manager {
+class Arts_Admin_Notice_Manager {
 	protected static $_instance;
 	private $admin_notices;
-	private $prefix         = 'xpoint';
+	private $prefix         = 'arts';
 	private $action_dismiss = '';
 	const TYPES             = 'error,warning,info,success';
 

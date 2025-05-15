@@ -1,8 +1,8 @@
 <wpml-config>
   <custom-types>
-    <custom-type translate="1">xpoint_portfolio_item</custom-type>
+    <custom-type translate="1">xpoint_portfolio_item_item</custom-type>
   </custom-types>
   <taxonomies>
-    <taxonomy translate="1">xpoint_portfolio_category</taxonomy>
+    <taxonomy translate="1">xpoint_portfolio_item_category</taxonomy>
   </taxonomies>
 </wpml-config>

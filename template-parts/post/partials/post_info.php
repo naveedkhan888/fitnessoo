@@ -6,7 +6,7 @@ $post_show_categories       = get_theme_mod( 'post_show_categories', true );
 $post_show_comments_counter = get_theme_mod( 'post_show_comments_counter', true );
 $post_show_author           = get_theme_mod( 'post_show_author', true );
 $date_link                  = get_month_link( get_post_time( 'Y' ), get_post_time( 'm' ) );
-$author                     = xpoint_get_post_author();
+$author                     = arts_get_post_author();
 
 ?>
 
@@ -33,7 +33,7 @@ $author                     = xpoint_get_post_author();
 
 	<?php if ( ! empty( $author['name'] ) && $post_show_author ) : ?>
 		<div class="post-preview__meta">
-			<span class="post-meta__item-text"><?php esc_html_e( 'by', 'themename' ); ?></span>
+			<span class="post-meta__item-text"><?php esc_html_e( 'by', 'rubenz' ); ?></span>
 			<a href="<?php echo esc_url( $author['url'] ); ?>"><?php echo esc_html( $author['name'] ); ?></a>
 		</div>
 	<?php endif; ?>

@@ -32,7 +32,7 @@ if ( is_active_sidebar( 'blog-sidebar' ) ) {
 				<?php endif; ?>
 				<?php if ( get_the_posts_pagination() ) : ?>
 					<div class="section-blog__wrapper-pagination">
-						<?php xpoint_posts_pagination(); ?>
+						<?php arts_posts_pagination(); ?>
 					</div>
 					<!-- - pagination -->
 				<?php endif; ?>

@@ -2,7 +2,7 @@
  * ==========================================================================
  * ==========================================================================
  *
- * Themename – Creative Portfolio AJAX Template
+ * Rubenz – Creative Portfolio AJAX Template
  *
  * [Table of Contents]
  *
@@ -242,7 +242,7 @@ img {
   flex-direction: column;
 }
 
-[data-widget_type*=themename] .swiper-container-vertical.swiper-container-initialized > .swiper-wrapper, [data-widget_type*=themename] .swiper-container-horizontal.swiper-container-initialized > .swiper-wrapper {
+[data-widget_type*=rubenz] .swiper-container-vertical.swiper-container-initialized > .swiper-wrapper, [data-widget_type*=rubenz] .swiper-container-horizontal.swiper-container-initialized > .swiper-wrapper {
   overflow: initial !important;
 }
 
@@ -1738,7 +1738,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 /*!========================================================================
  * 21. Grid
  * ======================================================================!*/
-.elementor-widget-themename-widget-portfolio-masonry-grid {
+.elementor-widget-rubenz-widget-portfolio-masonry-grid {
   overflow: unset !important;
 }
 
@@ -6434,18 +6434,18 @@ cite:before {
 /*!========================================================================
  * 77. Widget Logo
  * ======================================================================!*/
-.widget_ruben_logo, .widget_themename_logo {
+.widget_ruben_logo, .widget_rubenz_logo {
   max-width: 360px;
 }
-.widget_ruben_logo .logo, .widget_themename_logo .logo {
+.widget_ruben_logo .logo, .widget_rubenz_logo .logo {
   margin-bottom: 2em;
 }
 
 @media screen and (max-width: 991px) {
-  .widget_ruben_logo, .widget_themename_logo {
+  .widget_ruben_logo, .widget_rubenz_logo {
     max-width: 100%;
   }
-  .widget_ruben_logo .logo, .widget_themename_logo .logo {
+  .widget_ruben_logo .logo, .widget_rubenz_logo .logo {
     margin-bottom: 1em;
   }
 }

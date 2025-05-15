@@ -9,7 +9,7 @@ add_filter( 'kirki_telemetry', '__return_false' );
 $priority = 1;
 
 Kirki::add_config(
-	'xpoint',
+	'arts',
 	array(
 		'capability'  => 'edit_theme_options',
 		'option_type' => 'theme_mod',
@@ -23,7 +23,7 @@ Kirki::add_panel(
 	'general-style',
 	array(
 		'priority' => $priority++,
-		'title'    => esc_html__( 'General Style', 'themename' ),
+		'title'    => esc_html__( 'General Style', 'rubenz' ),
 		'icon'     => 'dashicons-admin-appearance',
 	)
 );
@@ -41,7 +41,7 @@ Kirki::add_panel(
 	'footer',
 	array(
 		'priority' => $priority++,
-		'title'    => esc_html__( 'Footer', 'themename' ),
+		'title'    => esc_html__( 'Footer', 'rubenz' ),
 		'icon'     => 'dashicons-arrow-down-alt',
 	)
 );
@@ -59,7 +59,7 @@ Kirki::add_panel(
 	'blog',
 	array(
 		'priority' => $priority++,
-		'title'    => esc_html__( 'Blog', 'themename' ),
+		'title'    => esc_html__( 'Blog', 'rubenz' ),
 		'icon'     => 'dashicons-editor-bold',
 	)
 );
@@ -72,7 +72,7 @@ Kirki::add_panel(
 	'theme_options',
 	array(
 		'priority' => $priority++,
-		'title'    => esc_html__( 'Theme Options', 'themename' ),
+		'title'    => esc_html__( 'Theme Options', 'rubenz' ),
 		'icon'     => 'dashicons-admin-tools',
 	)
 );

@@ -10,7 +10,7 @@
  *
  * @package    TGM-Plugin-Activation
  * @subpackage Example
- * @version    2.6.1 for parent theme Themename for publication on ThemeForest
+ * @version    2.6.1 for parent theme Rubenz for publication on ThemeForest
  * @author     Thomas Griffin, Gary Jones, Juliette Reinders Folmer
  * @copyright  Copyright (c) 2011, Thomas Griffin
  * @license    http://opensource.org/licenses/gpl-2.0.php GPL v2 or later
@@ -20,48 +20,48 @@
 /**
  * Include the TGM_Plugin_Activation class.
  */
-require_once XPOINT_THEME_PATH . '/inc/classes/class-tgm-plugin-activation.php';
+require_once ARTS_THEME_PATH . '/inc/classes/class-tgm-plugin-activation.php';
 
-add_action( 'tgmpa_register', 'xpoint_register_required_plugins' );
-function xpoint_register_required_plugins() {
+add_action( 'tgmpa_register', 'arts_register_required_plugins' );
+function arts_register_required_plugins() {
 	/*
 	 * Array of plugin arrays. Required keys are name and slug.
 	 * If the source is NOT from the .org repo, then source is also required.
 	 */
 	$plugins = array(
 		array(
-			'name'     => esc_html__( 'Advanced Custom Fields PRO', 'themename' ),
+			'name'     => esc_html__( 'Advanced Custom Fields PRO', 'rubenz' ),
 			'slug'     => 'advanced-custom-fields-pro',
-			'source'   => esc_url( 'https://xpertpoin8.com/wp-json/edd/v1/file/acf-pro/plugin' ),
+			'source'   => esc_url( 'https://artemsemkin.com/wp-json/edd/v1/file/acf-pro/plugin' ),
 			'required' => true,
 		),
 		array(
-			'name'     => esc_html__( 'Contact Form 7', 'themename' ),
+			'name'     => esc_html__( 'Contact Form 7', 'rubenz' ),
 			'slug'     => 'contact-form-7',
 			'required' => false,
 		),
 
 		array(
-			'name'     => esc_html__( 'Elementor', 'themename' ),
+			'name'     => esc_html__( 'Elementor', 'rubenz' ),
 			'slug'     => 'elementor',
 			'required' => true,
 		),
 		array(
-			'name'     => esc_html__( 'Kirki', 'themename' ),
+			'name'     => esc_html__( 'Kirki', 'rubenz' ),
 			'slug'     => 'kirki',
 			'required' => true,
 		),
 		array(
-			'name'     => esc_html__( 'Intuitive Custom Post Order', 'themename' ),
+			'name'     => esc_html__( 'Intuitive Custom Post Order', 'rubenz' ),
 			'slug'     => 'intuitive-custom-post-order',
 			'required' => false,
 		),
 		array(
-			'name'     => esc_html__( 'Themename Core', 'themename' ),
-			'slug'     => 'themename-core',
-			'source'   => esc_url( 'https://xpertpoin8.com/wp-json/edd/v1/file/' . XPOINT_THEME_SLUG . '/core-plugin' ),
+			'name'     => esc_html__( 'Rubenz Core', 'rubenz' ),
+			'slug'     => 'rubenz-core',
+			'source'   => esc_url( 'https://artemsemkin.com/wp-json/edd/v1/file/' . ARTS_THEME_SLUG . '/core-plugin' ),
 			'required' => true,
-			'version'  => '1.0',
+			'version'  => '3.1.0',
 		),
 	);
 
@@ -70,7 +70,7 @@ function xpoint_register_required_plugins() {
 	 *
 	 */
 	$config = array(
-		'id'           => 'themename',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+		'id'           => 'rubenz',                 // Unique ID for hashing notices for multiple instances of TGMPA.
 		'default_path' => '',                      // Default absolute path to bundled plugins.
 		'menu'         => 'tgmpa-install-plugins', // Menu slug.
 		'has_notices'  => true,                    // Show admin notices or not.

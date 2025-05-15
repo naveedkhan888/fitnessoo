@@ -4,7 +4,7 @@ if ( post_password_required() ) {
 	return;
 }
 
-require_once XPOINT_THEME_PATH . '/inc/classes/class-xpoint-walker-comment.php';
+require_once ARTS_THEME_PATH . '/inc/classes/class-arts-walker-comment.php';
 
 ?>
 
@@ -18,10 +18,10 @@ require_once XPOINT_THEME_PATH . '/inc/classes/class-xpoint-walker-comment.php';
 			<?php
 			$comments_number = get_comments_number();
 			if ( '1' === $comments_number ) {
-				$output = sprintf( '%1$s %2$s', $comments_number, esc_html__( 'Comment', 'themename' ) );
+				$output = sprintf( '%1$s %2$s', $comments_number, esc_html__( 'Comment', 'rubenz' ) );
 				echo esc_html( $output );
 			} else {
-				$output = sprintf( '%1$s %2$s', $comments_number, esc_html__( 'Comments', 'themename' ) );
+				$output = sprintf( '%1$s %2$s', $comments_number, esc_html__( 'Comments', 'rubenz' ) );
 				echo esc_html( $output );
 			}
 			?>
@@ -34,7 +34,7 @@ require_once XPOINT_THEME_PATH . '/inc/classes/class-xpoint-walker-comment.php';
 						'avatar_size' => 80,
 						'style'       => 'ol',
 						'short_ping'  => true,
-						'walker'      => new Xpoint_Walker_Comment(),
+						'walker'      => new Arts_Walker_Comment(),
 					)
 				);
 			?>
@@ -49,7 +49,7 @@ require_once XPOINT_THEME_PATH . '/inc/classes/class-xpoint-walker-comment.php';
 	if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 		?>
 
-		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'themename' ); ?></p>
+		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'rubenz' ); ?></p>
 		<?php
 	endif;
 

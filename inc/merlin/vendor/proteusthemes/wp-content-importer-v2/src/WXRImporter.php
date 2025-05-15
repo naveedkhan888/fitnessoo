@@ -1137,10 +1137,10 @@ class WXRImporter extends \WP_Importer {
 				$parts = pathinfo( $remote_url );
 				$name = basename( $parts['basename'], ".{$parts['extension']}" ); // PATHINFO_FILENAME in PHP 5.2
 
-				$pxpoint_new = pathinfo( $upload['url'] );
-				$name_new = basename( $pxpoint_new['basename'], ".{$pxpoint_new['extension']}" );
+				$parts_new = pathinfo( $upload['url'] );
+				$name_new = basename( $parts_new['basename'], ".{$parts_new['extension']}" );
 
-				$this->url_remap[$parts['dirname'] . '/' . $name] = $pxpoint_new['dirname'] . '/' . $name_new;
+				$this->url_remap[$parts['dirname'] . '/' . $name] = $parts_new['dirname'] . '/' . $name_new;
 			}*/
 		}
 

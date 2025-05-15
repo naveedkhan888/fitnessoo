@@ -12,13 +12,13 @@ $prev_img;
 $attr_link                          = '';
 $class_link                         = 'col';
 $class_link_prev                    = '';
-$prev_label                         = get_theme_mod( 'portfolio_nav_prev_title', esc_html__( 'Prev', 'themename' ) );
-$next_label                         = get_theme_mod( 'portfolio_nav_next_title', esc_html__( 'Next', 'themename' ) );
+$prev_label                         = get_theme_mod( 'portfolio_nav_prev_title', esc_html__( 'Prev', 'rubenz' ) );
+$next_label                         = get_theme_mod( 'portfolio_nav_next_title', esc_html__( 'Next', 'rubenz' ) );
 $enable_portfolio_loop              = get_theme_mod( 'enable_portfolio_loop', true );
 $enable_portfolio_next_first_mobile = get_theme_mod( 'enable_portfolio_next_first_mobile', false );
 
 $args  = array(
-	'post_type'      => 'xpoint_portfolio_item',
+	'post_type'      => 'xpoint_portfolio_item_item',
 	'posts_per_page' => -1,
 );
 $posts = get_posts( $args );
@@ -98,7 +98,7 @@ if ( $enable_portfolio_next_first_mobile ) {
 		<div class="section-nav-projects__backgrounds">
 			<?php if ( $prev_post && ! empty( $prev_img ) ) : ?>
 				<?php
-					xpoint_the_lazy_image(
+					arts_the_lazy_image(
 						array(
 							'id'        => $prev_img,
 							'class'     => array(
@@ -113,7 +113,7 @@ if ( $enable_portfolio_next_first_mobile ) {
 			<?php endif; ?>
 			<?php if ( $next_post && ! empty( $next_img ) ) : ?>
 				<?php
-					xpoint_the_lazy_image(
+					arts_the_lazy_image(
 						array(
 							'id'        => $next_img,
 							'class'     => array(

@@ -3,8 +3,8 @@
 /**
  * Custom Fields (author, email, url) for Comment Form
  */
-add_filter( 'comment_form_default_fields', 'xpoint_filter_comment_form_default_fields' );
-function xpoint_filter_comment_form_default_fields( $args = array(), $post_id = null ) {
+add_filter( 'comment_form_default_fields', 'arts_filter_comment_form_default_fields' );
+function arts_filter_comment_form_default_fields( $args = array(), $post_id = null ) {
 	if ( null === $post_id ) {
 		$post_id = get_the_ID();
 	}
@@ -40,7 +40,7 @@ function xpoint_filter_comment_form_default_fields( $args = array(), $post_id = 
 				<div class="col form__col">
 					<label class="input-float js-input-float">
 						<input class="input-float__input" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" maxlength="245"' . $html_req . '/>' .
-							'<span class="input-float__label">' . esc_html__( 'Name', 'themename' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</span>
+							'<span class="input-float__label">' . esc_html__( 'Name', 'rubenz' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</span>
 					</label>
 				</div>
 			</div>
@@ -50,7 +50,7 @@ function xpoint_filter_comment_form_default_fields( $args = array(), $post_id = 
 				<div class="col form__col">
 					<label class="input-float js-input-float">
 						<input class="input-float__input" id="email" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30" maxlength="100" aria-describedby="email-notes"' . $html_req . ' />' .
-							'<span class="input-float__label">' . esc_html__( 'Email', 'themename' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</span>
+							'<span class="input-float__label">' . esc_html__( 'Email', 'rubenz' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</span>
 					</label>
 				</div>
 			</div>
@@ -60,7 +60,7 @@ function xpoint_filter_comment_form_default_fields( $args = array(), $post_id = 
 				<div class="col form__col">
 					<label class="input-float js-input-float">
 						<input class="input-float__input" id="url" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" maxlength="200" />' .
-							'<span class="input-float__label">' . esc_html__( 'Website', 'themename' ) . '</span>
+							'<span class="input-float__label">' . esc_html__( 'Website', 'rubenz' ) . '</span>
 					</label>
 				</div>
 			</div>
@@ -73,14 +73,14 @@ function xpoint_filter_comment_form_default_fields( $args = array(), $post_id = 
 /**
  * Custom Textarea & Submit Button for Comment Form
  */
-add_filter( 'comment_form_defaults', 'xpoint_comment_form_defaults' );
-function xpoint_comment_form_defaults() {
+add_filter( 'comment_form_defaults', 'arts_comment_form_defaults' );
+function arts_comment_form_defaults() {
 	$args = array(
 		'comment_field' => '
 		<div class="row form__row">
 			<div class="col form__col">
 				<label class="input-float js-input-float">
-					<textarea id="comment" name="comment" class="input-float__input input-float__input_textarea" cols="45" rows="8" maxlength="65525" required="required"></textarea><span class="input-float__label">' . esc_html_x( 'Comment', 'noun', 'themename' ) . '</span>
+					<textarea id="comment" name="comment" class="input-float__input input-float__input_textarea" cols="45" rows="8" maxlength="65525" required="required"></textarea><span class="input-float__label">' . esc_html_x( 'Comment', 'noun', 'rubenz' ) . '</span>
 				</label>
 			</div>
 		</div>
