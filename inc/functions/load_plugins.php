@@ -61,7 +61,7 @@ function arts_register_required_plugins() {
 			'slug'     => 'themename-core',
 			'source'   => esc_url( 'https://artemsemkin.com/wp-json/edd/v1/file/' . ARTS_THEME_SLUG . '/core-plugin' ),
 			'required' => true,
-			'version'  => '3.1.0',
+			'version'  => '1.0',
 		),
 	);
 
