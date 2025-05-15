@@ -3,7 +3,7 @@
 $priority = 1;
 
 Kirki::add_field(
-	'arts',
+	'xpoint',
 	array(
 		'type'        => 'switch',
 		'settings'    => 'outdated_browsers_enabled',
@@ -16,7 +16,7 @@ Kirki::add_field(
 );
 
 Kirki::add_field(
-	'arts',
+	'xpoint',
 	array(
 		'type'            => 'generic',
 		'settings'        => 'outdated_browsers_prevew_button',

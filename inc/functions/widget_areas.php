@@ -5,8 +5,8 @@
  *
  * @return void
  */
-add_action( 'widgets_init', 'arts_register_widget_areas' );
-function arts_register_widget_areas() {
+add_action( 'widgets_init', 'xpoint_register_widget_areas' );
+function xpoint_register_widget_areas() {
 	$menu_style     = get_theme_mod( 'menu_style', 'classic' );
 	$footer_columns = get_theme_mod( 'footer_columns', 3 );
 

@@ -1,6 +1,6 @@
 <?php
 
-$is_elementor_page    = arts_is_built_with_elementor();
+$is_elementor_page    = xpoint_is_built_with_elementor();
 $enable_portfolio_nav = get_theme_mod( 'enable_portfolio_nav', true );
 $post_type            = get_post_type();
 

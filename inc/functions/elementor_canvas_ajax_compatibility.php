@@ -7,7 +7,7 @@ add_action(
 	'elementor/page_templates/canvas/before_content',
 	function() {
 		$theme_namespace            = 'light';
-		$theme_page                 = arts_get_document_option( 'page_main_color_theme' );
+		$theme_page                 = xpoint_get_document_option( 'page_main_color_theme' );
 		$theme_header               = '';
 		$class_wrapper_menu         = '';
 		$class_wrapper_burger       = '';
@@ -135,7 +135,7 @@ add_action(
 			'menu_class'     => 'menu-overlay js-menu-overlay',
 			'link_before'    => '<div class="menu-overlay__item-wrapper"><span class="split-chars">',
 			'link_after'     => '</span></div>',
-			'walker'         => new Arts_Walker_Nav_Menu_Overlay(),
+			'walker'         => new Xpoint_Walker_Nav_Menu_Overlay(),
 		);
 
 		if ( $menu_style == 'classic' ) {
@@ -198,7 +198,7 @@ add_action(
 		<?php if ( ! empty( $posts_with_thumbnails ) ) : ?>
 			<?php foreach ( $posts_with_thumbnails as $current_post ) : ?>
 				<?php
-					arts_the_lazy_image(
+					xpoint_the_lazy_image(
 						array(
 							'id'        => $current_post['img'],
 							'class'     => array(

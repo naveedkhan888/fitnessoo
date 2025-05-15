@@ -3,7 +3,7 @@
 /**
  * Custom Slugs for Custom Post Types
  */
-function arts_change_cpt_slug( $args, $post_type ) {
+function xpoint_change_cpt_slug( $args, $post_type ) {
 	$enable_custom_portfolio_slug = get_theme_mod( 'enable_custom_portfolio_slug', false );
 	$portfolio_slug               = get_theme_mod( 'portfolio_slug' );
 
@@ -13,4 +13,4 @@ function arts_change_cpt_slug( $args, $post_type ) {
 
 	return $args;
 }
-add_filter( 'register_post_type_args', 'arts_change_cpt_slug', 10, 2 );
+add_filter( 'register_post_type_args', 'xpoint_change_cpt_slug', 10, 2 );

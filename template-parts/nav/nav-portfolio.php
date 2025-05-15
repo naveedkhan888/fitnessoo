@@ -98,7 +98,7 @@ if ( $enable_portfolio_next_first_mobile ) {
 		<div class="section-nav-projects__backgrounds">
 			<?php if ( $prev_post && ! empty( $prev_img ) ) : ?>
 				<?php
-					arts_the_lazy_image(
+					xpoint_the_lazy_image(
 						array(
 							'id'        => $prev_img,
 							'class'     => array(
@@ -113,7 +113,7 @@ if ( $enable_portfolio_next_first_mobile ) {
 			<?php endif; ?>
 			<?php if ( $next_post && ! empty( $next_img ) ) : ?>
 				<?php
-					arts_the_lazy_image(
+					xpoint_the_lazy_image(
 						array(
 							'id'        => $next_img,
 							'class'     => array(
