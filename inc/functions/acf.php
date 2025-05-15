@@ -1,11 +1,6 @@
 <?php
 
-/**
- * Hide ACF Menu
- */
-if ( ! XPOINT_THEME_DEV ) {
-	add_filter( 'acf/settings/show_admin', '__return_false' );
-}
+
 
 /**
  * ACF Fields
