@@ -3,7 +3,7 @@
 $priority = 1;
 
 Kirki::add_field(
-	'arts',
+	'xpoint',
 	array(
 		'type'     => 'switch',
 		'settings' => 'enable_cf_7_modals',
